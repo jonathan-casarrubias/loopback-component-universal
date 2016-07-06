@@ -23,6 +23,7 @@ module.exports = (server, options) => {
    * Create 
    **/
   console.log(options);
+  console.log(path.join(__dirname, options.client));
   let client = require(server.loopback.static(path.join(__dirname, options.client)));
   /**
   * Enable Prod Mode
