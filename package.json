@@ -4,7 +4,9 @@
   "description": "A LoopBack component to adapt with Angular Universal and the LoopBack SDK Builder",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "IBM",
@@ -41,6 +43,8 @@
     "zone.js": "0.6.12",
     "css": "^2.2.1",
     "parse5": "^1.5.1",
-    "preboot": "^2.1.2"
-  }
+    "preboot": "^2.1.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
